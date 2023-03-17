@@ -10,6 +10,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
+
+    
   </head>
 
   <body>
@@ -17,14 +19,14 @@
 
     <div class="all-tasks">
       <h2 class="task-list-title">My lists</h2>
-      <ul class="task-list">
+      <ul class="task-list" data-lists>
         <!-- <li class="list-name active-list">Youtube</li>
         <li class="list-name">Work</li>
         <li class="list-name">Grocery</li> -->
       </ul>
 
-      <form action="">
-        <input 
+      <form data-new-list-form action="">
+        <input data-new-list-input
           type="text"
           class="new list"
           placeholder="new list name"
@@ -92,14 +94,15 @@
         </div>
 
         <div class="delete-stuff">
-          <button class="btn delete">Clear completed tasks</button>
-          <button class="btn delete">Delete list</button>
+          <button class="btn delete" data-clear-button>Clear completed tasks</button>
+          <button class="btn delete" data-delete-button>Delete list</button>
         </div>
       </div>
     </div>
     </div>
 
 
-    <script src="main.css"></script>
+    <script defer src="script.js"></script>
+    
   </body>
 </html>
