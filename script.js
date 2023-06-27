@@ -216,13 +216,3 @@ function clearElement(element) {
 }
 render()
 
-// Add event listener to document for deselecting current list
-document.addEventListener('click', (e) => {
-  const isClickedOutsideContainer = !taskListContainer.contains(e.target);
-  const isClickedOnList = e.target.closest('[data-list-id]');
-
-  if (isClickedOutsideContainer && !isClickedOnList) {
-    selectedListIdKey = null;
-    saveAndRender();
-  }
-});
